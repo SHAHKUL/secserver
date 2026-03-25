@@ -126,6 +126,10 @@ app.post("/log", async (req, res) => {
 
 //////////////////////////////////user//////////////////////////////////
 
+app.get('/',(req,res)=>{
+  res.json({message:"server is running "})
+})
+
 app.listen(process.env.PORT, () => {
   console.log("seerver connected");
 });
